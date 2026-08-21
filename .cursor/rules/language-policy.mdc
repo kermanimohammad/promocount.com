@@ -1,0 +1,23 @@
+---
+description: English-only for site artifacts; Persian OK in Cursor chat
+alwaysApply: true
+---
+
+# Language policy for Promo Count
+
+## Site and repository (English only)
+
+Everything that belongs to the website or its repository must be in English:
+
+- UI copy, marketing text, legal pages, alt text, ARIA labels
+- Commit messages and PR titles/descriptions
+- README, docs, comments, TODOs, error messages, logs
+- GitHub Actions workflow names and step names
+- Branch names when practical
+
+Do not add Persian (Farsi) or other non-English text to the codebase, commits, or CI output.
+
+## Cursor chat with the user
+
+Replies to the user in this chat may be in Persian when the user writes in Persian.
+Keep technical identifiers (paths, commands, URLs, commit SHAs) in English as usual.
