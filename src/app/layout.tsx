@@ -10,15 +10,15 @@ import "./globals.css";
 
 const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  variable: "--font-dealscope",
+  variable: "--font-promocount",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: "DealScope — Discover Better Deals & Shop Smarter",
-    template: "%s | DealScope",
+    default: "Promo Count — Discover Better Deals & Shop Smarter",
+    template: "%s | Promo Count",
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
@@ -27,12 +27,12 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: "DealScope — Discover Better Deals & Shop Smarter",
+    title: "Promo Count — Discover Better Deals & Shop Smarter",
     description: siteConfig.description,
   },
   twitter: {
     card: "summary_large_image",
-    title: "DealScope — Discover Better Deals & Shop Smarter",
+    title: "Promo Count — Discover Better Deals & Shop Smarter",
     description: siteConfig.description,
   },
   robots: {

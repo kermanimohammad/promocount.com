@@ -1,12 +1,12 @@
 export const siteConfig = {
-  name: "DealScope",
+  name: "Promo Count",
   tagline: "Discover better deals. Shop smarter.",
   description:
-    "Discover useful products, compare options, and find great deals from online marketplaces with DealScope.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
-  email: "hello@dealscope.example",
+    "Discover useful products, compare options, and find great deals from online marketplaces with Promo Count.",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://promocount.com",
+  email: "hello@promocount.com",
   affiliateDisclosure:
-    "Disclosure: DealScope may earn a commission when you purchase through certain links on this website. This does not affect the price you pay.",
+    "Disclosure: Promo Count may earn a commission when you purchase through certain links on this website. This does not affect the price you pay.",
   demoNotice:
     "This catalog currently uses sample products for demonstration. Prices, availability, and outbound links are placeholders until marketplace APIs are connected.",
 };

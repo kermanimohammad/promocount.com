@@ -7,7 +7,7 @@ const steps = [
   {
     icon: Search,
     title: "Discover",
-    body: "Browse curated product cards by category, price, and discount. DealScope is a discovery layer — not a checkout cart.",
+    body: "Browse curated product cards by category, price, and discount. Promo Count is a discovery layer — not a checkout cart.",
   },
   {
     icon: GitCompareArrows,
@@ -28,7 +28,7 @@ export function HowItWorks() {
         <SectionHeading
           eyebrow="How it works"
           title="Find a deal, then finish on the merchant site"
-          description="DealScope helps you discover products and deals. Clicking a deal may take you to an external marketplace."
+          description="Promo Count helps you discover products and deals. Clicking a deal may take you to an external marketplace."
         />
         <ol className="mt-10 grid gap-6 md:grid-cols-3">
           {steps.map((step, index) => (

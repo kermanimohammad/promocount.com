@@ -6,11 +6,11 @@ import { Container } from "@/components/Container";
 export const metadata: Metadata = {
   title: "Affiliate Disclosure",
   description:
-    "DealScope may earn a commission when you purchase through certain links. This does not increase the price you pay.",
+    "Promo Count may earn a commission when you purchase through certain links. This does not increase the price you pay.",
   openGraph: {
-    title: "Affiliate Disclosure | DealScope",
+    title: "Affiliate Disclosure | Promo Count",
     description:
-      "DealScope may earn a commission when you purchase through certain links. This does not increase the price you pay.",
+      "Promo Count may earn a commission when you purchase through certain links. This does not increase the price you pay.",
   },
 };
 
@@ -25,7 +25,7 @@ export default function AffiliateDisclosurePage() {
           </h1>
         </div>
         <p>
-          DealScope may participate in affiliate programs. That means we may earn a commission if
+          Promo Count may participate in affiliate programs. That means we may earn a commission if
           you click certain links on this website and later purchase a product or service on a
           third-party site.
         </p>
@@ -36,11 +36,11 @@ export default function AffiliateDisclosurePage() {
         </p>
         <p>
           This does not increase the customer’s purchase price. You pay the price shown by the
-          destination store at checkout. DealScope does not add a surcharge because you arrived
+          destination store at checkout. Promo Count does not add a surcharge because you arrived
           from this site.
         </p>
         <p>
-          External websites have their own terms and privacy policies. After you leave DealScope,
+          External websites have their own terms and privacy policies. After you leave Promo Count,
           that merchant’s rules apply to your order, account, and data. We are not Amazon,
           AliExpress, or any other marketplace, and we do not claim official endorsement from
           those companies.

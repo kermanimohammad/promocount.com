@@ -8,7 +8,7 @@ export function Footer() {
     <footer className="mt-auto border-t border-border/80 bg-stone-50">
       <Container className="grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-3">
         <div className="max-w-sm">
-          <p className="font-heading text-lg font-semibold">DealScope</p>
+          <p className="font-heading text-lg font-semibold">Promo Count</p>
           <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
             {siteConfig.tagline} An independent product discovery site. We are not Amazon,
             AliExpress, or any other marketplace.
@@ -29,7 +29,7 @@ export function Footer() {
             </li>
             <li>
               <Link href="/about" className="text-muted-foreground hover:text-foreground">
-                About DealScope
+                About Promo Count
               </Link>
             </li>
           </ul>
@@ -49,7 +49,7 @@ export function Footer() {
       </Container>
       <div className="border-t border-border/80">
         <Container className="flex flex-col gap-2 py-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} DealScope. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Promo Count. All rights reserved.</p>
           <p>Demo catalog. Outbound deal links currently point to example.com.</p>
         </Container>
       </div>

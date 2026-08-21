@@ -29,9 +29,9 @@ export function Header() {
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center gap-4 px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex shrink-0 items-center gap-2">
           <span className="flex size-8 items-center justify-center rounded-lg bg-teal-800 text-sm font-bold tracking-tight text-white">
-            DS
+            PC
           </span>
-          <span className="font-heading text-lg font-semibold tracking-tight">DealScope</span>
+          <span className="font-heading text-lg font-semibold tracking-tight">Promo Count</span>
         </Link>
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
@@ -72,7 +72,7 @@ export function Header() {
           </SheetTrigger>
           <SheetContent side="right" className="w-[min(100%,20rem)]">
             <SheetHeader>
-              <SheetTitle>DealScope</SheetTitle>
+              <SheetTitle>Promo Count</SheetTitle>
             </SheetHeader>
             <div className="flex flex-col gap-6 px-4 pb-6">
               <Suspense fallback={<SearchFallback />}>

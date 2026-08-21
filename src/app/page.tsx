@@ -15,10 +15,10 @@ import { siteConfig } from "@/lib/site";
 import { getFeaturedProducts, getTrendingProducts } from "@/services/products";
 
 export const metadata: Metadata = {
-  title: "DealScope — Discover Better Deals & Shop Smarter",
+  title: "Promo Count — Discover Better Deals & Shop Smarter",
   description: siteConfig.description,
   openGraph: {
-    title: "DealScope — Discover Better Deals & Shop Smarter",
+    title: "Promo Count — Discover Better Deals & Shop Smarter",
     description: siteConfig.description,
   },
 };

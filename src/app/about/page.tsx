@@ -5,11 +5,11 @@ import { Container } from "@/components/Container";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "DealScope is a product discovery platform designed to help shoppers discover useful products, compare options, and find interesting deals across online marketplaces.",
+    "Promo Count is a product discovery platform designed to help shoppers discover useful products, compare options, and find interesting deals across online marketplaces.",
   openGraph: {
-    title: "About | DealScope",
+    title: "About | Promo Count",
     description:
-      "DealScope is a product discovery platform designed to help shoppers discover useful products, compare options, and find interesting deals across online marketplaces.",
+      "Promo Count is a product discovery platform designed to help shoppers discover useful products, compare options, and find interesting deals across online marketplaces.",
   },
 };
 
@@ -23,16 +23,16 @@ export default function AboutPage() {
         </h1>
         <div className="prose-none mt-8 space-y-5 text-base leading-relaxed text-muted-foreground">
           <p>
-            DealScope is a product discovery platform designed to help shoppers discover useful
+            Promo Count is a product discovery platform designed to help shoppers discover useful
             products, compare options, and find interesting deals across online marketplaces.
           </p>
           <p>
             We are building an independent catalog experience: search, categories, and product
-            pages that explain what you are looking at before you leave for a merchant. DealScope
+            pages that explain what you are looking at before you leave for a merchant. Promo Count
             is not a storefront. We do not take payment, ship items, or hold inventory.
           </p>
           <p>
-            DealScope is not owned by Amazon, AliExpress, or any other marketplace, and we do not
+            Promo Count is not owned by Amazon, AliExpress, or any other marketplace, and we do not
             claim an official partnership with those companies. When a deal link is live, it may
             lead to a third-party site that participates in an affiliate program.
           </p>

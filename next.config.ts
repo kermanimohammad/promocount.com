@@ -4,17 +4,21 @@ import { fileURLToPath } from "node:url";
 
 const projectRoot = path.dirname(fileURLToPath(import.meta.url));
 
+/** Static HTML export for GitHub Pages (no Node server required). */
 const nextConfig: NextConfig = {
-  turbopack: {
-    root: projectRoot,
-  },
+  output: "export",
+  trailingSlash: true,
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
         hostname: "images.unsplash.com",
       },
     ],
+  },
+  turbopack: {
+    root: projectRoot,
   },
 };
 

@@ -41,7 +41,7 @@ export async function generateMetadata({
     title: product.name,
     description,
     openGraph: {
-      title: `${product.name} | DealScope`,
+      title: `${product.name} | Promo Count`,
       description,
       images: [{ url: product.image, alt: product.name }],
     },
@@ -65,7 +65,7 @@ export default async function ProductPage({ params }: { params: Params }) {
     name: product.name,
     description: product.description,
     image: product.images,
-    brand: { "@type": "Brand", name: "DealScope demo catalog" },
+    brand: { "@type": "Brand", name: "Promo Count demo catalog" },
     offers: {
       "@type": "Offer",
       priceCurrency: product.currency,

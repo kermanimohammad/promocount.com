@@ -6,10 +6,10 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact DealScope about partnerships, catalog questions, or the website.",
+  description: "Contact Promo Count about partnerships, catalog questions, or the website.",
   openGraph: {
-    title: "Contact | DealScope",
-    description: "Contact DealScope about partnerships, catalog questions, or the website.",
+    title: "Contact | Promo Count",
+    description: "Contact Promo Count about partnerships, catalog questions, or the website.",
   },
 };
 
@@ -20,7 +20,7 @@ export default function ContactPage() {
         <div>
           <p className="text-xs font-semibold tracking-[0.18em] text-teal-800 uppercase">Contact</p>
           <h1 className="font-heading mt-3 text-4xl font-semibold tracking-tight">
-            Write to DealScope
+            Write to Promo Count
           </h1>
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
             Use this form for partnership questions, catalog issues, or general feedback. The

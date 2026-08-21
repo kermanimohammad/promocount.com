@@ -8,11 +8,11 @@ import { categories } from "@/data/categories";
 export const metadata: Metadata = {
   title: "Categories",
   description:
-    "Browse DealScope categories including electronics, home, beauty, fashion, tools, gadgets, sports, and accessories.",
+    "Browse Promo Count categories including electronics, home, beauty, fashion, tools, gadgets, sports, and accessories.",
   openGraph: {
-    title: "Categories | DealScope",
+    title: "Categories | Promo Count",
     description:
-      "Browse DealScope categories including electronics, home, beauty, fashion, tools, gadgets, sports, and accessories.",
+      "Browse Promo Count categories including electronics, home, beauty, fashion, tools, gadgets, sports, and accessories.",
   },
 };
 

@@ -26,7 +26,7 @@ export async function generateMetadata({
     title: category.name,
     description: category.description,
     openGraph: {
-      title: `${category.name} | DealScope`,
+      title: `${category.name} | Promo Count`,
       description: category.description,
     },
   };

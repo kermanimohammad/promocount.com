@@ -21,7 +21,7 @@ export function ContactForm() {
         <p className="font-heading text-lg font-semibold text-teal-950">Message saved locally</p>
         <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-teal-900/80">
           Thanks for writing. This demo form does not send email yet. When a mail provider is
-          connected, messages will be delivered to the DealScope inbox.
+          connected, messages will be delivered to the Promo Count inbox.
         </p>
         <Button
           type="button"

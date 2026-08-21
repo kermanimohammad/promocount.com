@@ -15,7 +15,7 @@ export const products: Product[] = [
     name: "Over-Ear Wireless Headphones",
     category: "electronics",
     description:
-      "Closed-back wireless headphones designed for long listening sessions at a desk or on a commute. Soft ear cushions, a folding hinge, and a rechargeable battery keep daily use simple. This listing is sample catalog data for the DealScope demo.",
+      "Closed-back wireless headphones designed for long listening sessions at a desk or on a commute. Soft ear cushions, a folding hinge, and a rechargeable battery keep daily use simple. This listing is sample catalog data for the Promo Count demo.",
     price: 59.99,
     originalPrice: 89.99,
     discount: 33,
