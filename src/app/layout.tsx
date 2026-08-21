@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Plus_Jakarta_Sans } from "next/font/google";
 
-import { DemoBanner } from "@/components/DemoBanner";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { siteConfig } from "@/lib/site";
@@ -48,7 +47,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="en" className={`${jakarta.variable} h-full`}>
       <body className="flex min-h-full flex-col bg-background font-sans text-foreground antialiased">
-        <DemoBanner />
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />

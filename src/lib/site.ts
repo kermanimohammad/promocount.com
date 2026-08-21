@@ -7,8 +7,6 @@ export const siteConfig = {
   email: "hello@promocount.com",
   affiliateDisclosure:
     "Disclosure: Promo Count may earn a commission when you purchase through certain links on this website. This does not affect the price you pay.",
-  demoNotice:
-    "This catalog currently uses sample products for demonstration. Prices, availability, and outbound links are placeholders until marketplace APIs are connected.",
 };
 
 export const navItems = [
