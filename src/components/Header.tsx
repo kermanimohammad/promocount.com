@@ -5,6 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 
+import { BrandLogo } from "@/components/BrandLogo";
 import { SearchBar } from "@/components/SearchBar";
 import {
   Sheet,
@@ -27,12 +28,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/80 bg-background/90 backdrop-blur-md">
       <div className="mx-auto flex h-16 w-full max-w-6xl items-center gap-4 px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="flex shrink-0 items-center gap-2">
-          <span className="flex size-8 items-center justify-center rounded-lg bg-teal-800 text-sm font-bold tracking-tight text-white">
-            PC
-          </span>
-          <span className="font-heading text-lg font-semibold tracking-tight">Promo Count</span>
-        </Link>
+        <BrandLogo priority />
 
         <nav className="hidden items-center gap-1 lg:flex" aria-label="Primary">
           {navItems.map((item) => {
@@ -72,7 +68,8 @@ export function Header() {
           </SheetTrigger>
           <SheetContent side="right" className="w-[min(100%,20rem)]">
             <SheetHeader>
-              <SheetTitle>Promo Count</SheetTitle>
+              <SheetTitle className="sr-only">PromoCount</SheetTitle>
+              <BrandLogo href={null} className="h-14" />
             </SheetHeader>
             <div className="flex flex-col gap-6 px-4 pb-6">
               <Suspense fallback={<SearchFallback />}>

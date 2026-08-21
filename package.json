@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 4321",
     "build": "next build",
-    "preview": "npx --yes serve out",
-    "start": "npx --yes serve out",
+    "preview": "npx --yes serve out -l 4321",
+    "start": "npx --yes serve out -l 4321",
     "lint": "eslint"
   },
   "dependencies": {
