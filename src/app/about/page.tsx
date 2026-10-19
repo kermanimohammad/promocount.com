@@ -37,15 +37,14 @@ export default function AboutPage() {
             lead to a third-party site that participates in an affiliate program.
           </p>
           <p>
-            The products you see now are a demonstration catalog. They exist so the site can be
-            designed, reviewed, and connected to real affiliate APIs without inventing sales
-            figures or customer reviews.
+            The deals on Promo Count are real Amazon listings with Associates tracking links. Prices
+            and stock can change on Amazon; always confirm the final price before you buy.
           </p>
           <h2 className="font-heading pt-4 text-2xl font-semibold text-foreground">What we will add next</h2>
           <ul className="list-disc space-y-2 pl-5">
-            <li>Live offers from affiliate-eligible marketplaces, starting with AliExpress.</li>
+            <li>More marketplace sources, including AliExpress where available.</li>
             <li>Price and availability refresh on a schedule.</li>
-            <li>Clear source labels so you always know which marketplace a deal opens.</li>
+            <li>Clearer source labels so you always know which store a deal opens.</li>
           </ul>
         </div>
       </Container>

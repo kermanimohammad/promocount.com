@@ -65,7 +65,7 @@ export default async function ProductPage({ params }: { params: Params }) {
     name: product.name,
     description: product.description,
     image: product.images,
-    brand: { "@type": "Brand", name: "Promo Count demo catalog" },
+    brand: { "@type": "Brand", name: "Amazon" },
     offers: {
       "@type": "Offer",
       priceCurrency: product.currency,
@@ -124,11 +124,12 @@ export default async function ProductPage({ params }: { params: Params }) {
             <p className="mt-2 text-sm text-muted-foreground">
               Availability:{" "}
               {product.availability === "in_stock"
-                ? "Listed as in stock in the demo catalog"
+                ? "Listed as in stock"
                 : product.availability === "out_of_stock"
                   ? "Listed as unavailable"
                   : "Unknown"}
               . Source: {product.source === "demo" ? "sample data" : product.source}.
+              Prices may differ on Amazon at checkout.
             </p>
 
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
@@ -158,7 +159,7 @@ export default async function ProductPage({ params }: { params: Params }) {
               <ExternalLink className="size-4" />
             </a>
             <p className="mt-2 text-xs text-muted-foreground">
-              Opens an external website. Current demo links go to example.com, not a live merchant.
+              Opens Amazon in a new tab via our affiliate link.
             </p>
 
             <AffiliateDisclosure className="mt-8" />

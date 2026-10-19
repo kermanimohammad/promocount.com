@@ -54,7 +54,7 @@ export default function HomePage() {
             <SectionHeading
               eyebrow="Featured"
               title="Featured deals"
-              description="A starting set of sample products. Treat prices and photos as demonstration data."
+              description="Hand-picked Amazon deals with live affiliate links. Prices can change on the merchant site."
             />
             <Link
               href="/deals"
@@ -89,8 +89,8 @@ export default function HomePage() {
           <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <SectionHeading
               eyebrow="Trending"
-              title="Trending in the demo catalog"
-              description="Additional sample cards so you can see how a second row of deals will look."
+              title="Trending picks"
+              description="Popular fashion, fitness, and home finds shoppers are checking out right now."
             />
             <Link
               href="/deals?sort=discount-desc"
@@ -113,7 +113,7 @@ export default function HomePage() {
             <div>
               <p className="font-heading text-xl font-semibold">Ready to look around?</p>
               <p className="mt-1 text-sm text-teal-100/80">
-                The full demo catalog lives on the deals page, with search and filters.
+                Browse the full catalog on the deals page, with search and filters.
               </p>
             </div>
             <ButtonLink href="/deals" className="h-11 bg-white px-6 text-teal-900 hover:bg-stone-100">

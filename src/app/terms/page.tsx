@@ -30,8 +30,8 @@ export default function TermsPage() {
         <h2 className="font-heading pt-2 text-2xl font-semibold text-foreground">The service</h2>
         <p>
           Promo Count publishes product information and links so you can discover deals. We do not
-          sell the products ourselves. Prices, photos, and availability in the current catalog are
-          demonstration data unless a page clearly states otherwise.
+          sell the products ourselves. Prices, photos, and availability can change on Amazon; always
+          confirm details on the merchant site before you buy.
         </p>
         <h2 className="font-heading pt-2 text-2xl font-semibold text-foreground">
           Third-party purchases

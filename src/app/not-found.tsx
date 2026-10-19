@@ -12,7 +12,7 @@ export default function NotFound() {
           This page is not in the catalog
         </h1>
         <p className="mt-3 text-muted-foreground">
-          The link may be outdated, or the demo product was removed. Head back to deals or home.
+          The link may be outdated, or the product was removed. Head back to deals or home.
         </p>
         <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row">
           <ButtonLink href="/deals" className="h-11 bg-teal-800 px-6 hover:bg-teal-800/90">

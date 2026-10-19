@@ -46,8 +46,8 @@ export default function AffiliateDisclosurePage() {
           those companies.
         </p>
         <p>
-          Until affiliate APIs are connected, demo “View Deal” buttons point to placeholder URLs
-          on example.com so you can test the flow without a live commission.
+          “View Deal” buttons open Amazon product pages through our Associates tracking links. We
+          may earn a commission if you buy through those links, at no extra cost to you.
         </p>
         <p>
           See also the{" "}

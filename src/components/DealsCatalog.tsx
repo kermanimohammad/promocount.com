@@ -56,7 +56,7 @@ function DealsCatalogInner() {
       <SectionHeading
         eyebrow="Catalog"
         title={title}
-        description="Search, filter, and sort the demo catalog. Live marketplace offers will use this same page once APIs are connected."
+        description="Search, filter, and sort live Amazon affiliate deals."
       />
       <div className="mt-10 grid gap-10 lg:grid-cols-[16rem_minmax(0,1fr)]">
         <FilterPanel />

@@ -1,15 +1,14 @@
-import { products as mockProducts } from "@/data/products";
+import { products as catalogProducts } from "@/data/products";
 import { calcDiscount } from "@/lib/format";
 import type { CategorySlug, Product, ProductQuery } from "@/types/product";
 
 /**
  * Product access layer.
  *
- * Today this reads the local demo catalog. When AliExpress Affiliate or
- * Amazon Associates APIs are connected, keep these function signatures and
- * swap the data source (HTTP client, cache, or database) inside this file.
+ * Currently serves the Amazon Associates catalog in `data/products`.
+ * Keep these signatures when swapping to live API sync later.
  */
-const catalog: Product[] = mockProducts.map((product) => ({
+const catalog: Product[] = catalogProducts.map((product) => ({
   ...product,
   discount: product.discount || calcDiscount(product.price, product.originalPrice),
 }));

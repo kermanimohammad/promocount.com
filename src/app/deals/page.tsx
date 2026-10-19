@@ -6,11 +6,11 @@ import { DealsCatalog } from "@/components/DealsCatalog";
 export const metadata: Metadata = {
   title: "Deals",
   description:
-    "Browse Promo Count deals. Filter by category, price, and discount. Catalog data is currently a demonstration set.",
+    "Browse Promo Count deals. Filter by category, price, and discount across live Amazon affiliate offers.",
   openGraph: {
     title: "Deals | Promo Count",
     description:
-      "Browse Promo Count deals. Filter by category, price, and discount. Catalog data is currently a demonstration set.",
+      "Browse Promo Count deals. Filter by category, price, and discount across live Amazon affiliate offers.",
   },
 };
 

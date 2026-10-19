@@ -29,7 +29,7 @@ export interface Product {
   originalPrice: number;
   /** Discount percentage, 0–100. Recalculate from prices when ingesting live APIs. */
   discount: number;
-  currency: "USD";
+  currency: "USD" | "CAD";
   image: string;
   images: string[];
   features: string[];

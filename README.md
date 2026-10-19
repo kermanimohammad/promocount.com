@@ -33,6 +33,14 @@ The production files are written to the `out/` folder.
 
 A `CNAME` file is included under `public/` so it ships inside `out/`.
 
+## eBay Production keyset (Marketplace Account Deletion)
+
+GitHub Pages cannot run API routes. Use the **Cloudflare Worker** in `cloudflare/ebay-deletion/` for:
+
+`https://promocount.com/api/ebay/marketplace-account-deletion`
+
+See [cloudflare/ebay-deletion/README.md](./cloudflare/ebay-deletion/README.md).
+
 ## Stack
 
 Next.js (static export), TypeScript, Tailwind CSS, shadcn/ui

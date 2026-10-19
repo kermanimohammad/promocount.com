@@ -51,7 +51,7 @@ export function Footer() {
       <div className="border-t border-border/80">
         <Container className="flex flex-col gap-2 py-5 text-xs text-muted-foreground sm:flex-row sm:items-center sm:justify-between">
           <p>© {new Date().getFullYear()} Promo Count. All rights reserved.</p>
-          <p>Demo catalog. Outbound deal links currently point to example.com.</p>
+          <p>As an Amazon Associate we earn from qualifying purchases.</p>
         </Container>
       </div>
     </footer>
