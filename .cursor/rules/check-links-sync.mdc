@@ -1,0 +1,17 @@
+---
+description: When user says چک کن / check links — sync links.txt into catalog and git
+alwaysApply: true
+---
+
+# Sync Amazon links on "چک کن"
+
+When the user writes **چک کن**, **check**, or asks to sync/update links:
+
+1. Read `links.txt` and extract every Amazon ASIN (`/dp/ASIN`).
+2. Compare against `externalProductId` values in `src/data/products.ts`.
+3. For each **new** ASIN: add a real product entry (name, category, description, price estimate, image via Amazon thumbnail or fallback, full affiliate URL from `links.txt`, `source: "amazon"`, `isDemo: false`).
+4. If an existing ASIN’s affiliate URL in `links.txt` changed, update that product’s `affiliateUrl`.
+5. Do **not** remove products unless the user explicitly asks.
+6. Commit and push to `origin` (English commit message). Include `links.txt` and `src/data/products.ts`.
+
+If there are no new ASINs and no URL changes, say so and skip the commit.
