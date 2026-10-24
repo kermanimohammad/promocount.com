@@ -4,8 +4,8 @@ import type { Product } from "@/types/product";
 const amazonImg = (asin: string) =>
   `https://images-na.ssl-images-amazon.com/images/P/${asin}.01.LZZZZZZZ.jpg`;
 
-const photo = (id: string, width = 900) =>
-  `https://images.unsplash.com/${id}?auto=format&fit=crop&w=${width}&q=80`;
+/** Local copy of the real Amazon product photo (preferred when classic ASIN thumbnails fail). */
+const localAmazonImg = (asin: string) => `/products/${asin}.jpg`;
 
 /**
  * Live Amazon affiliate catalog sourced from Promo Count Associates links.
@@ -87,8 +87,8 @@ export const products: Product[] = [
     originalPrice: 19.99,
     discount: 25,
     currency: "USD",
-    image: "https://m.media-amazon.com/images/I/71XpNTRDgHL._AC_SL1500_.jpg",
-    images: ["https://m.media-amazon.com/images/I/71XpNTRDgHL._AC_SL1500_.jpg"],
+    image: localAmazonImg("B0F4XL8M53"),
+    images: [localAmazonImg("B0F4XL8M53")],
     features: [
       "Moisture-wicking quick-dry fabric",
       "UPF 50+ sun protection",
@@ -119,8 +119,8 @@ export const products: Product[] = [
     originalPrice: 29.99,
     discount: 33,
     currency: "USD",
-    image: photo("photo-1521572163474-6864f9cf17ab"),
-    images: [photo("photo-1521572163474-6864f9cf17ab")],
+    image: localAmazonImg("B0DR8LHW3J"),
+    images: [localAmazonImg("B0DR8LHW3J")],
     features: [
       "Soft cooling stretch fabric",
       "Fitted modern silhouette",
@@ -183,8 +183,8 @@ export const products: Product[] = [
     originalPrice: 24.99,
     discount: 28,
     currency: "USD",
-    image: photo("photo-1584622650111-993a426fbf0a"),
-    images: [photo("photo-1584622650111-993a426fbf0a")],
+    image: localAmazonImg("B0CFGYFCYL"),
+    images: [localAmazonImg("B0CFGYFCYL")],
     features: [
       "Highly absorbent chenille pile",
       "Non-slip backing",
@@ -215,8 +215,8 @@ export const products: Product[] = [
     originalPrice: 54.99,
     discount: 27,
     currency: "CAD",
-    image: photo("photo-1542291026-7eec264c27ff"),
-    images: [photo("photo-1542291026-7eec264c27ff")],
+    image: localAmazonImg("B08CK6NQ9J"),
+    images: [localAmazonImg("B08CK6NQ9J")],
     features: [
       "Breathable athletic upper",
       "Lightweight everyday build",
@@ -311,8 +311,8 @@ export const products: Product[] = [
     originalPrice: 49.99,
     discount: 30,
     currency: "CAD",
-    image: photo("photo-1541625602330-2277a4c46182"),
-    images: [photo("photo-1541625602330-2277a4c46182")],
+    image: localAmazonImg("B09L16DGXQ"),
+    images: [localAmazonImg("B09L16DGXQ")],
     features: [
       "Designed for cycling and outdoor rides",
       "Breathable performance fabric",
@@ -407,8 +407,8 @@ export const products: Product[] = [
     originalPrice: 39.99,
     discount: 25,
     currency: "USD",
-    image: photo("photo-1506784983877-45594efa4cbe"),
-    images: [photo("photo-1506784983877-45594efa4cbe")],
+    image: localAmazonImg("B08HGY1Q4K"),
+    images: [localAmazonImg("B08HGY1Q4K")],
     features: [
       "80×80 inch size for 4–8 adults",
       "Waterproof foldable design",
@@ -439,8 +439,8 @@ export const products: Product[] = [
     originalPrice: 35.99,
     discount: 20,
     currency: "USD",
-    image: photo("photo-1525310072745-f49212b5ac6d"),
-    images: [photo("photo-1525310072745-f49212b5ac6d")],
+    image: localAmazonImg("B074ZVDLPP"),
+    images: [localAmazonImg("B074ZVDLPP")],
     features: [
       "UPF 50+ UV protection canopy",
       "Blocks over 98% of UVA and UVB rays",
