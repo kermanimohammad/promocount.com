@@ -311,8 +311,8 @@ export const products: Product[] = [
     originalPrice: 49.99,
     discount: 30,
     currency: "CAD",
-    image: photo("photo-1517649763962-0c623066027c"),
-    images: [photo("photo-1517649763962-0c623066027c")],
+    image: photo("photo-1541625602330-2277a4c46182"),
+    images: [photo("photo-1541625602330-2277a4c46182")],
     features: [
       "Designed for cycling and outdoor rides",
       "Breathable performance fabric",
