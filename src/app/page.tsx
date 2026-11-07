@@ -12,7 +12,7 @@ import { ProductGrid } from "@/components/ProductGrid";
 import { SectionHeading } from "@/components/SectionHeading";
 import { categories } from "@/data/categories";
 import { siteConfig } from "@/lib/site";
-import { getFeaturedProducts, getTrendingProducts } from "@/services/products";
+import { getProducts } from "@/services/products";
 
 export const metadata: Metadata = {
   title: "Promo Count — Discover Better Deals & Shop Smarter",
@@ -37,8 +37,7 @@ const jsonLd = {
 };
 
 export default function HomePage() {
-  const featured = getFeaturedProducts(8);
-  const trending = getTrendingProducts(6);
+  const products = getProducts({ sort: "featured" });
 
   return (
     <>
@@ -52,19 +51,19 @@ export default function HomePage() {
         <Container>
           <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
             <SectionHeading
-              eyebrow="Featured"
-              title="Featured deals"
-              description="Hand-picked Amazon deals with live affiliate links. Prices can change on the merchant site."
+              eyebrow="Catalog"
+              title="All deals"
+              description={`${products.length} Amazon deals with live affiliate links. Prices can change on the merchant site.`}
             />
             <Link
               href="/deals"
               className="inline-flex items-center gap-1 text-sm font-medium text-teal-800 hover:underline"
             >
-              View all deals
+              Search & filter
               <ArrowRight className="size-4" />
             </Link>
           </div>
-          <ProductGrid products={featured} />
+          <ProductGrid products={products} />
         </Container>
       </section>
 
@@ -84,26 +83,6 @@ export default function HomePage() {
         </Container>
       </section>
 
-      <section className="py-16 sm:py-20">
-        <Container>
-          <div className="mb-10 flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-            <SectionHeading
-              eyebrow="Trending"
-              title="Trending picks"
-              description="Popular fashion, fitness, and home finds shoppers are checking out right now."
-            />
-            <Link
-              href="/deals?sort=discount-desc"
-              className="inline-flex items-center gap-1 text-sm font-medium text-teal-800 hover:underline"
-            >
-              Highest discounts
-              <ArrowRight className="size-4" />
-            </Link>
-          </div>
-          <ProductGrid products={trending} />
-        </Container>
-      </section>
-
       <HowItWorks />
 
       <section className="border-t border-border/80 bg-white py-12">
@@ -111,9 +90,9 @@ export default function HomePage() {
           <AffiliateDisclosure />
           <div className="flex flex-col items-start justify-between gap-4 rounded-2xl bg-teal-900 px-6 py-8 text-teal-50 sm:flex-row sm:items-center sm:px-10">
             <div>
-              <p className="font-heading text-xl font-semibold">Ready to look around?</p>
+              <p className="font-heading text-xl font-semibold">Want to narrow it down?</p>
               <p className="mt-1 text-sm text-teal-100/80">
-                Browse the full catalog on the deals page, with search and filters.
+                Use search and filters on the deals page to find the right offer faster.
               </p>
             </div>
             <ButtonLink href="/deals" className="h-11 bg-white px-6 text-teal-900 hover:bg-stone-100">
